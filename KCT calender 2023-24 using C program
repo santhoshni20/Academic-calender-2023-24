@@ -1,0 +1,1454 @@
+#include<stdio.h>
+void Print_Header();
+void Print_Month();
+void September_2023();
+void October_2023();
+void November_2023();
+void December_2023();
+void January_2024();
+void Febrary_2024();
+void March_2024();
+void April_2024();
+void May_2024();
+void June_2024();
+void July_2024();
+void Important_Events();
+void Government_and_Weekend_holidays();
+/*void CAT_Exams();
+void Semester_Exams();*/
+
+void main()
+{
+   int choice;
+   do
+   {
+       printf("\nMenu: \n");
+       printf("\n1. September_2023");
+       printf("\n2. October_2023");
+       printf("\n3. November_2023");
+       printf("\n4. December_2023");
+       printf("\n5. January_2024");
+       printf("\n6. Febrary_2024");
+       printf("\n7. March_2024");
+       printf("\n8. April_2024");
+       printf("\n9. May_2024");
+       printf("\n10. June_2024");
+       printf("\n11. July_2024");
+       printf("\n12. Important Events");
+       printf("\n13. Government and Weekend holidays");
+       printf("\n14. CAT exams");
+       printf("\n15. Semester Exams\n");
+       
+       printf("\nEnter your Choice: ");
+       scanf("%d",&choice);
+       
+       switch(choice)
+       {
+           case 1:
+           {
+               September_2023();
+               break;
+           }
+           case 2:
+           {
+               October_2023();
+               break;
+           }
+           case 3:
+           {
+               November_2023();
+               break;
+           }
+           case 4:
+           {
+               December_2023();
+               break;
+           }
+           case 5:
+           {
+               January_2024();
+               break;
+           }
+           case 6:
+           {
+               Febrary_2024();
+               break;
+           }
+           case 7:
+           {
+               March_2024();
+               break;
+           }
+           case 8:
+           {
+               April_2024();
+               break;
+           }
+           case 9:
+           {
+               May_2024();
+               break;
+           }
+           case 10:
+           {
+               June_2024();
+               break;
+           }
+           case 11:
+           {
+               July_2024();
+               break;
+           }
+           case 12:
+           {
+               Important_Events();
+               break;
+           }
+           case 13:
+           {
+               Government_and_Weekend_holidays();
+               break;
+           }
+           /*case 14:
+           {
+               CAT_Exams();
+               break;
+           }
+           case 15:
+           {
+               Semester_Exams();
+               break;
+           }*/
+       }
+   }
+   while(choice != 0);
+}
+
+void Print_Header()
+{
+    printf("Sun  Mon  Tue  Wed  Thu  Fri  Sat\n");
+}
+
+void Print_Month(int startDay, int numDays)
+{
+    int day, col;
+    
+    for(col = 0; col < startDay; col++)
+    {
+        printf("     ");
+    }
+    
+    for(day = 1; day <= numDays; day++)
+    {
+        printf("%3d  ", day);
+        if(++col > 6)
+        {
+            col = 0;
+            printf("\n");
+        }
+    }
+    
+    if(col != 0)
+    {
+        printf("\n");
+    }
+}
+
+void September_2023()
+{
+    int startDay = 5;
+    int numDays = 30;
+    Print_Header();
+    Print_Month(startDay, numDays);
+}
+
+void October_2023()
+{
+    int startDay = 0;
+    int numDays = 31;
+    Print_Header();
+    Print_Month(startDay, numDays);
+}
+
+void November_2023()
+{
+    int startDay = 3;
+    int numDays = 30;
+    Print_Header();
+    Print_Month(startDay, numDays);
+}
+
+void December_2023()
+{
+    int startDay = 5;
+    int numDays = 31;
+    Print_Header();
+    Print_Month(startDay, numDays);
+}
+
+void January_2024()
+{
+    int startDay = 1;
+    int numDays = 31;
+    Print_Header();
+    Print_Month(startDay, numDays);
+}
+
+void Febrary_2024()
+{
+    int startDay = 4;
+    int numDays = 29;
+    Print_Header();
+    Print_Month(startDay, numDays);
+}
+
+void March_2024()
+{
+    int startDay = 5;
+    int numDays = 31;
+    Print_Header();
+    Print_Month(startDay, numDays);
+}
+
+void April_2024()
+{
+    int startDay = 1;
+    int numDays = 30;
+    Print_Header();
+    Print_Month(startDay, numDays);
+}
+
+void May_2024()
+{
+    int startDay = 3;
+    int numDays = 31;
+    Print_Header();
+    Print_Month(startDay, numDays);
+}
+
+void June_2024()
+{
+    int startDay = 1;
+    int numDays = 30;
+    Print_Header();
+    Print_Month(startDay, numDays);
+}
+
+void July_2024()
+{
+    int startDay = 1;
+    int numDays = 31;
+    Print_Header();
+    Print_Month(startDay, numDays);
+}
+
+void Important_Events()
+{
+    int mon_choice1, date_jan24, date_feb24, date_mar24, date_apr24, date_may24, date_jun24, date_jul24, date_sep23, date_oct23, date_nov23, date_dec23;
+    
+    printf("Enter for which month you have to see the details:\n 1.September 2023\n 2.October 2023\n 3.November 2023\n 4.December 2023\n 5.January 2024\n 6.Febrary 2024\n 7.March 2024\n 8.April 2024\n 9.May 2024\n 10.June 2024\n 11.July 2024\n");
+    scanf("%d",&mon_choice1);
+    
+    switch(mon_choice1)
+    {
+        case 1:
+        {
+            printf("\nEnter a date in September 2023 for which you have to view the details: ");
+            scanf("%d",&date_sep23);
+            switch(date_sep23)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 6:
+                case 7:
+                case 8:
+                case 9:
+                case 10:
+                case 11:
+                case 12:
+                case 13:
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 18:
+                case 19:
+                case 21:
+                case 22:
+                case 23:
+                case 24:
+                case 25:
+                case 26:
+                case 27:
+                case 28:
+                case 29:
+                case 30:
+                {
+                    printf("\n----------------SORRY--NO--EVENTS---------------------\n");
+                    break;
+                }
+                case 4:
+                {
+                    printf("\nIt's the time to welcome KCT's 40th Batch!!!\nSwagatham 2023!!!\n");
+                    break;
+                }
+                case 5:
+                {
+                    printf("\nIt's the day to celebrate our second parents!\nHappy Teachers Day!!!\n");
+                    break;
+                }
+                case 20:
+                {
+                    printf("\nSemester 1 starts!\nAll The Very Best!!!\n");
+                    break;
+                }
+            }
+            break;
+        }
+        case 2:
+        {
+            printf("\nEnter a date in October 2023 for which you have to view the details: ");
+            scanf("%d",&date_oct23);
+            switch(date_oct23)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+                case 7:
+                case 8:
+                case 9:
+                case 10:
+                case 11:
+                case 12:
+                case 13:
+                case 14:
+                case 16:
+                case 17:
+                case 18:
+                case 19:
+                case 20:
+                case 21:
+                case 22:
+                case 23:
+                case 24:
+                case 25:
+                case 26:
+                case 27:
+                case 28:
+                case 29:
+                case 30:
+                case 31:
+                {
+                    printf("\n----------------SORRY--NO--EVENTS---------------------\n");
+                    break;
+                }
+                case 15:
+                {
+                    printf("\nToday is the birth date of the great legend Dr.A.P.J.Abdul Kalam!\nNational Education Day!!!\n");
+                    break;
+                }
+            }
+            break;
+        }
+        case 3:
+        {
+            printf("\nEnter a date in November 2023 for which you have to view the details: ");
+            scanf("%d",&date_nov23);
+            switch(date_nov23)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+                case 7:
+                case 8:
+                case 9:
+                case 10:
+                case 11:
+                case 12:
+                case 13:
+                case 15:
+                case 16:
+                case 17:
+                case 18:
+                case 19:
+                case 20:
+                case 21:
+                case 22:
+                case 23:
+                case 24:
+                case 25:
+                case 26:
+                case 27:
+                case 28:
+                case 29:
+                case 30:
+                {
+                    printf("\n----------------SORRY--NO--EVENTS---------------------\n");
+                    break;
+                }
+                case 14:
+                {
+                    printf("\nLet us celebrate the future Minds!\nHappy Children's Day!!!\n");
+                    break;
+                }
+            }
+            break;
+        }
+        case 4:
+        {
+            printf("\nEnter a date in December 2023 for which you have to view the details: ");
+            scanf("%d",&date_dec23);
+            switch(date_dec23)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+                case 7:
+                case 8:
+                case 9:
+                case 10:
+                case 11:
+                case 12:
+                case 13:
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 18:
+                case 19:
+                case 20:
+                case 21:
+                case 22:
+                case 23:
+                case 24:
+                case 26:
+                case 27:
+                case 28:
+                case 29:
+                case 30:
+                {
+                    printf("\n----------------SORRY--NO--EVENTS---------------------\n");
+                    break;
+                }
+                case 25:
+                {
+                    printf("\nJingle Bells Jingle Bells!\nRing'O Bells!!!\n");
+                    break;
+                }
+                case 31:
+                { 
+                    printf("\nBYE BYE 2023!!!\nAdavance Happy Newyear\n");
+                    break;
+                }
+            }
+            break;
+        }
+        case 5: 
+        {
+            printf("\nEnter a date in January 2024 for which you have to view the details: ");
+            scanf("%d",&date_jan24);
+            switch(date_jan24)
+            {
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                case 7:
+                case 9:
+                case 10:
+                case 11:
+                case 12:
+                case 13:
+                case 14:
+                case 18:
+                case 19:
+                case 20:
+                case 21:
+                case 23:
+                case 24:
+                case 25:
+                case 26:
+                case 27:
+                case 28:
+                case 29:
+                case 30:
+                case 31:
+                {
+                    printf("\n----------------SORRY--NO--EVENTS---------------------\n");
+                    break;
+                }
+                case 1:
+                {
+                    printf("\nHappy Newyear!!!\n");
+                    break;
+                }
+                case 6:
+                {
+                    printf("\nFun! Joy! Excitement!\nJANANAM 2023-2024!!!\n");
+                    break;
+                }
+                case 8:
+                {
+                    printf("\nPongalo Pongal\n PONGAL THIRUVIZHA OF KCT 2024\n");
+                    break;
+                }
+            }
+            break;
+        }
+        case 6:
+        {
+            printf("\nEnter a date in febrary 2024 for which you have to view the details: ");
+            scanf("%d",&date_feb24);
+            switch(date_feb24)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+                case 7:
+                case 8:
+                case 9:
+                case 10:
+                case 11:
+                case 12:
+                case 13:
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 18:
+                case 19:
+                case 20:
+                case 21:
+                case 22:
+                case 23:
+                case 24:
+                case 25:
+                case 26:
+                case 27:
+                case 28:
+                case 29:
+                {
+                    printf("\n----------------SORRY--NO--EVENTS---------------------\n");
+                    break;
+                }
+            }
+            break;
+        }
+        case 7:
+        {
+            printf("\nEnter a date in March 2024 for which you have to view the details: ");
+            scanf("%d",&date_mar24);
+            switch(date_mar24)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+                case 7:
+                case 8:
+                case 9:
+                case 10:
+                case 11:
+                case 12:
+                case 13:
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 18:
+                case 19:
+                case 20:
+                case 24:
+                case 25:
+                case 26:
+                case 27:
+                case 28:
+                case 29:
+                case 30:
+                case 31:
+                {
+                    printf("\n----------------SORRY--NO--EVENTS---------------------\n");
+                    break;
+                }
+                case 21:
+                {
+                    printf("\nStarting of YUGAM 2024 !\nDAY-1 !!!\n");
+                    break;
+                }
+                case 22:
+                {
+                    printf("\nDAY-2 of YUGAM 2024 !!!\n");
+                    break;
+                }
+                case 23:
+                {
+                    printf("\nCommencement of YUGAM 2024 !!!\n");
+                    break;
+                }
+            }
+            break;
+        }
+        case 8:
+        {
+            printf("\nEnter a date in April 2024 for which you have to view the details: ");
+           scanf("%d",&date_apr24);
+           switch(date_apr24)
+           {
+               case 1:
+               case 2:
+               case 3:
+               case 4:
+               case 5:
+               case 6:
+               case 7:
+               case 8:
+               case 9:
+               case 10:
+               case 11:
+               case 12:
+               case 13:
+               case 14:
+               case 15:
+               case 16:
+               case 17:
+               case 18:
+               case 19:
+               case 20:
+               case 21:
+               case 22:
+               case 23:
+               case 24:
+               case 25:
+               case 26:
+               case 27:
+               case 28:
+               case 29:
+               case 30:
+               {
+                   printf("\n----------------SORRY--NO--EVENTS---------------------\n");
+                   break;
+               }
+            }
+            break;
+        }
+        case 9:
+        {
+            printf("\nEnter a date in May 2024 for which you have to view the details: ");
+            scanf("%d",&date_may24);
+            switch(date_may24)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+                case 7:
+                case 8:
+                case 9:
+                case 10:
+                case 11:
+                case 12:
+                case 13:
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 18:
+                case 19:
+                case 20:
+                case 21:
+                case 22:
+                case 23:
+                case 24:
+                case 25:
+                case 26:
+                case 27:
+                case 28:
+                case 29:
+                case 30:
+                case 31:
+                {
+                    printf("\n----------------SORRY--NO--EVENTS---------------------\n");
+                    break;
+                }
+            }
+            break;
+        }
+        case 10:
+        {
+            printf("\nEnter a date in June 2024 for which you have to view the details: ");
+            scanf("%d",&date_jun24);
+            switch(date_jun24)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+                case 7:
+                case 8:
+                case 9:
+                case 10:
+                case 11:
+                case 12:
+                case 13:
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 18:
+                case 19:
+                case 20:
+                case 21:
+                case 22:
+                case 23:
+                case 24:
+                case 25:
+                case 26:
+                case 27:
+                case 28:
+                case 29:
+                case 30:
+                {
+                    printf("\n----------------SORRY--NO--EVENTS---------------------\n");
+                    break;
+                }
+            }
+            break;
+        }
+        case 11:
+        {
+            printf("\nEnter a date in July 2024 for which you have to view the details: ");
+            scanf("%d",&date_jul24);
+            switch(date_jul24)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+                case 7:
+                case 8:
+                case 9:
+                case 10:
+                case 11:
+                case 12:
+                case 13:
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 18:
+                case 19:
+                case 20:
+                case 21:
+                case 22:
+                case 23:
+                case 24:
+                case 25:
+                case 26:
+                case 27:
+                case 28:
+                case 29:
+                case 30:
+                case 31:
+                {
+                    printf("\n----------------SORRY--NO--EVENTS---------------------\n");
+                    break;
+                }
+            }
+            break;
+        }
+    }
+}
+    
+void Government_and_Weekend_holidays()
+{
+    int mon_choice2, date_jan24, date_feb24, date_mar24, date_apr24, date_may24, date_jun24, date_jul24, date_sep23, date_oct23, date_nov23, date_dec23;
+    
+    printf("Enter for which month you have to see the details:\n 1.September 2023\n 2.October 2023\n 3.November 2023\n 4.December 2023\n 5.January 2024\n 6.Febrary 2024\n 7.March 2024\n 8.April 2024\n 9.May 2024\n 10.June 2024\n 11.July 2024\n");
+    scanf("%d",&mon_choice2);
+    
+    switch(mon_choice2)
+    {
+        case 1:
+        {
+            printf("\nEnter a date in September 2023 for which you have to view the details: ");
+            scanf("%d",&date_sep23);
+            
+            switch(date_sep23)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+                case 7:
+                case 8:
+                case 10:
+                case 11:
+                case 12:
+                case 13:
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 19:
+                case 20:
+                case 21:
+                case 22:
+                case 24:
+                case 25:
+                case 26:
+                case 27:
+                case 28:
+                case 29:
+                case 30:
+                {
+                    printf("\n----------------SORRY--NO--HOLIDAYS---------------------\n");
+                    break;
+                }
+                case 9:
+                {
+                    printf("\nToday will be a HOLIDAY! Because it is a even saturday\n");
+                    break;
+                }
+                case 18:
+                {
+                    printf("\nLet lord Ganesha bring happiness to everyone!\nHAPPY GANESH CHATURTHI!!!\n");
+                    break;
+                }
+                case 23:
+                {
+                    printf("\nToday will be a HOLIDAY! Because it is a even saturday\n");
+                    break;
+                }
+                break;
+            }
+        }
+        case 2:
+        {
+            printf("\nEnter a date in October 2023 for which you have to view the details: ");
+            scanf("%d",&date_oct23);
+            switch(date_oct23)
+            {
+                case 1:
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+                case 7:
+                case 8:
+                case 9:
+                case 10:
+                case 11:
+                case 12:
+                case 13:
+                case 15:
+                case 16:
+                case 17:
+                case 18:
+                case 19:
+                case 20:
+                case 21:
+                case 24:
+                case 25:
+                case 26:
+                case 27:
+                case 29:
+                case 30:
+                case 31:
+                {
+                    printf("\n----------------SORRY--NO--HOLIDAYS---------------------\n");
+                    break;
+                }
+                case 2:
+                {
+                    printf("\nIt's the day when our Father of our country was born!\nGANDHI JAYANTI!!!\n");
+                    break;
+                }
+                case 14:
+                {
+                    printf("\nToday will be a HOLIDAY! As it is a even saturday\n");
+                    break;
+                }
+                case 22:
+                {
+                    printf("\nMay Saraswathi bring wisdom in everone of us!\nHAPPY SARASWATHI POOJA!!!\n");
+                    break;
+                }
+                case 23:
+                {
+                    printf("\nHAPPY AAYUDHA POOJA!!!\n");
+                    break;
+                }
+                case 28:
+                {
+                    printf("\nToday will be a HOLIDAY! As it is a even saturday\n");
+                    break;
+                }
+                break;
+            }
+        }
+        case 3:
+        {
+            printf("\nEnter a date in November 2023 for which you have to view the details: ");
+            scanf("%d",&date_nov23);
+            switch(date_nov23)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+                case 7:
+                case 8:
+                case 9:
+                case 10:
+                case 13:
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 18:
+                case 19:
+                case 20:
+                case 21:
+                case 22:
+                case 23:
+                case 24:
+                case 26:
+                case 27:
+                case 28:
+                case 29:
+                case 30:
+                {
+                    printf("\n----------------SORRY--NO--HOLIDAYS---------------------\n");
+                    break;
+                }
+                case 11:
+                {
+                    printf("\nToday will be a HOLIDAY! Because it is a even saturday\n");
+                    break;
+                }
+                case 12:
+                {
+                    printf("\nLet the light of the Diyas brighten our life!\nHAPPY DIWALI!!!\n");
+                    break;
+                }
+                case 25:
+                {
+                    printf("\nToday will be a HOLIDAY! As it is a even saturday\n");
+                    break;
+                }
+                break;
+            }
+        }
+        case 4:
+        {
+            printf("\nEnter a date in December 2023 for which you have to view the details: ");
+            scanf("%d",&date_dec23);
+            switch(date_dec23)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+                case 7:
+                case 8:
+                case 10:
+                case 11:
+                case 12:
+                case 13:
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 18:
+                case 19:
+                case 20:
+                case 21:
+                case 22:
+                case 24:
+                case 26:
+                case 27:
+                case 28:
+                case 29:
+                case 30:
+                case 31:
+                {
+                    printf("\n----------------SORRY--NO--HOLIDAYS---------------------\n");
+                    break;
+                }
+                case 9:
+                {
+                    printf("\nToday will be a HOLIDAY! Because it is a even saturday\n");
+                    break;
+                }
+                case 23:
+                {
+                    printf("\nToday will be a HOLIDAY! Because it is a even saturday\n");
+                    break;
+                }
+                case 25:
+                {
+                    printf("\nMay Lord Jesus shower his blessings and love upon us and our family and friends!\nMERRY CHRISTMAS!!!\n");
+                    break;
+                }
+                break;
+            }
+        }
+        case 5:
+        {
+            printf("\nEnter a date in January 2024 for which you have to view the details: ");
+            scanf("%d",&date_jan24);
+            switch(date_jan24)
+            {
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+                case 7:
+                case 8:
+                case 9:
+                case 10:
+                case 11:
+                case 12:
+                case 18:
+                case 19:
+                case 20:
+                case 21:
+                case 22:
+                case 23:
+                case 24:
+                case 28:
+                case 29:
+                case 30:
+                case 31:
+                {
+                    printf("\n----------------SORRY--NO--HOLIDAYS---------------------\n");
+                    break;
+                }
+                case 1:
+                {
+                    printf("\nNew Year! New Beginning!\nHAPPY NEWYEAR!!!\n");
+                    break;
+                }
+                case 13:
+                {
+                    printf("\nToday will be a HOLIDAY! As it is a even saturday\n");
+                    break;
+                }
+                case 14:
+                {
+                    printf("\nMay the joy overflow in everyone's life!!!\nHAPPY PONGAL\n");
+                    break;
+                }
+                case 15:
+                {
+                    printf("\nMay the joy overflow in 5 sensed too!!!\nHAPPY MAATU PONGAL\n");
+                    break;
+                }
+                case 16:
+                {
+                    printf("\nIt's the birthday of The Great THIRUVALLUVAR!\nTHIRUVALLUVAR DHINAM!!!\n");
+                    break;
+                }
+                case 17:
+                {
+                    printf("\nThe day to celebrate The Backbone of World!\nUZHAVAR THIRUNAAL!!!\n");
+                    break;
+                }
+                case 25:
+                {
+                    printf("\nHAPPY THAI POOSAM!!!\n");
+                    break;
+                }
+                case 26:
+                {
+                    printf("\nIt's the day to celebrate our Constitution of India!\nHAPPY REPUBLIC DAY!!!\n");
+                    break;
+                }
+                case 27:
+                {
+                    printf("\nToday will be a HOLIDAY! Because it is a even saturday\n");
+                    break;
+                }
+                break;
+            }   
+        }
+        case 6: 
+        {
+            printf("\nEnter a date in Febrary 2024 for which you have to view the details: ");
+            scanf("%d",&date_feb24);
+            switch(date_feb24)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+                case 7:
+                case 8:
+                case 9:
+                case 11:
+                case 12:
+                case 13:
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 18:
+                case 19:
+                case 20:
+                case 21:
+                case 22:
+                case 23:
+                case 25:
+                case 26:
+                case 27:
+                case 28:
+                case 29:
+                {
+                    printf("\n----------------SORRY--NO--HOLIDAYS---------------------\n");
+                    break;
+                }
+                case 10:
+                {
+                    printf("\nToday will be a HOLIDAY! Because it is a even saturday\n");
+                    break;
+                }
+                case 24:
+                {
+                    printf("\nToday will be a HOLIDAY! Because it is a even saturday\n");
+                    break;
+                }
+                break;
+            }   
+        }
+        case 7:
+        {
+            printf("\nEnter a date in March 2024 for which you have to view the details: ");
+            scanf("%d",&date_mar24);
+            switch(date_mar24)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+                case 7:
+                case 8:
+                case 10:
+                case 11:
+                case 12:
+                case 13:
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 18:
+                case 19:
+                case 20:
+                case 21:
+                case 22:
+                case 24:
+                case 25:
+                case 26:
+                case 27:
+                case 28:
+                case 30:
+                case 31:
+                {
+                   printf("\n----------------SORRY--NO--HOLIDAYS---------------------\n");
+                   break;
+                }
+                case 9:
+                {
+                   printf("\nToday will be a HOLIDAY! Because it is a even saturday\n");
+                   break;
+                }
+                case 23:
+                {
+                   printf("\nToday will be a HOLIDAY! Because it is a even saturday\n");
+                   break;
+                }
+                case 29:
+                {
+                   printf("\nHAPPY GOOD FRIDAY!!!\n");
+                   break;
+                }
+                break;
+            }
+        }
+        case 8: 
+        {
+            printf("\nEnter a date in April 2024 for which you have to view the details: ");
+            scanf("%d",&date_apr24);
+            switch(date_apr24)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                case 15:
+                case 16:
+                case 17:
+                case 18:
+                case 19:
+                case 20:
+                case 22:
+                case 23:
+                case 24:
+                case 25:
+                case 26:
+                case 28:
+                case 29:
+                case 30:
+                {
+                   printf("\n----------------SORRY--NO--HOLIDAYS---------------------\n");
+                   break;
+                }
+                case 9:
+                {
+                   printf("\nHAPPY UGADHI(TELUGU NEWYEAR) 2024!!!\n");
+                   break;
+                }
+                case 11:
+                {
+                   printf("\nHAPPY RAMZAN!!!\n");
+                   break;
+                }
+                case 13:
+                {
+                   printf("\nToday will be a HOLIDAY! Because it is a even saturday\n");
+                   break;
+                }
+                case 14:
+                {
+                   printf("\nHAPPY TAMIL NEWYEAR!!!\nand\nIt's the day when The great legend Dr.B.R.Ambedkar was born!\n");
+                   break;
+                }
+                case 21:
+                {
+                   printf("\nHAPPY MAHAVIR JAYANTHI!!!\n");
+                   break;
+                }
+                case 27:
+                {
+                   printf("\nToday will be a HOLIDAY! As it is a even saturday\n");
+                   break;
+                }
+                break;
+            }
+        }
+        case 9:
+        {
+            printf("\nEnter a date in May 2024 for which you have to view the details: ");
+            scanf("%d",&date_may24);
+            switch(date_may24)
+            {
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+                case 7:
+                case 8:
+                case 9:
+                case 10:
+                case 12:
+                case 13:
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                case 18:
+                case 19:
+                case 20:
+                case 21:
+                case 22:
+                case 23:
+                case 24:
+                case 26:
+                case 27:
+                case 28:
+                case 29:
+                case 30:
+                case 31:
+                {
+                   printf("\n----------------SORRY--NO--HOLIDAYS---------------------\n");
+                   break;
+                }
+                case 1:
+                {
+                   printf("\nIt's the day to celebrate the hardworking workers of our country!\nHAPPY MAY DAY!!!\n");
+                   break;
+                }
+                case 11:
+                {
+                   printf("\nToday will be a HOLIDAY! As it is a even saturday\n");
+                   break;
+                }
+                case 25:
+                {
+                   printf("\nToday will be a HOLIDAY! As it is a even saturday\n");
+                   break;
+                }
+                break;
+            }
+        }
+        case 10:
+        {
+            printf("\nEnter a date in June 2024 for which you have to view the details: ");
+            scanf("%d",&date_jun24);
+            switch(date_jun24)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+                case 7:
+                case 9:
+                case 10:
+                case 11:
+                case 12:
+                case 13:
+                case 14:
+                case 15:
+                case 16:
+                case 18:
+                case 19:
+                case 20:
+                case 21:
+                case 23:
+                case 24:
+                case 25:
+                case 26:
+                case 27:
+                case 28:
+                case 29:
+                case 30:
+                {
+                    printf("\n----------------SORRY--NO--HOLIDAYS---------------------\n");
+                    break;
+                }
+                case 8:
+                {
+                    printf("\nToday will be a HOLIDAY! Because it is a even saturday\n");
+                    break;
+                }
+                case 17:
+                {
+                    printf("\nHAPPY BAKRID!!!\n");
+                    break;
+                }
+                case 22:
+                {
+                    printf("\nToday will be a HOLIDAY! Because it is a even saturday\n");
+                    break;
+                }
+                break;
+            }
+        }
+        case 11:
+        {
+            printf("\nEnter a date in July 2024 for which you have to view the details: ");
+            scanf("%d",&date_jul24);
+            switch(date_jul24)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+                case 7:
+                case 8:
+                case 9:
+                case 10:
+                case 11:
+                case 12:
+                case 14:
+                case 15:
+                case 16:
+                case 18:
+                case 19:
+                case 20:
+                case 21:
+                case 22:
+                case 23:
+                case 24:
+                case 25:
+                case 26:
+                case 28:
+                case 29:
+                case 30:
+                case 31:
+                {
+                   printf("\n----------------SORRY--NO--HOLIDAYS---------------------\n");
+                   break;
+                }
+                case 13:
+                {
+                   printf("\nToday will be a HOLIDAY! Because it is a even saturday\n");
+                   break;
+                }
+                case 17:
+                {
+                   printf("\nHAPPY MOHARAM!!!\n");
+                   break;
+                }
+                case 27:
+                {
+                   printf("\nToday will be a HOLIDAY! Beacause it is a even saturday\n");
+                   break;
+                }
+                break;
+            }
+        }
+    }
+}
+/*
+void CAT_Exams()
+{
+    
+}
+void semester exams()
+{
+    
+}
+    */
